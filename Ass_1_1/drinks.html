@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Drinks | Assignment_1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/jquery-mobile.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+  <link href="css/assignment_1.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/assignment_1.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Drinks" id="Drinks">
+      <div data-theme="b" data-role="header">
+          <a data-role="button" href="menu.html" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
+          </a>
+          <h3>
+              Drinks
+          </h3>
+      </div>
+      <div data-role="content">
+          <div class="ui-grid-a">
+              <div class="ui-block-a">
+                  <div style="" data-controltype="image">
+                      <img style="width: 300px; height: 100px" src="img/drinks.jpg"/>
+                  </div>
+              </div>
+              <div class="ui-block-b">
+              </div>
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;"/>
+          <div data-role="tabbar" data-iconpos="top" data-theme="c">
+              <ul>
+                  <li>
+                      <a href="#Cart" data-transition="fade" data-theme="" data-icon="plus">
+                          Add To Item to Cart
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div data-role="collapsible-set">
+              <div data-role="collapsible">
+                  <h3>
+                      Soft Drinks
+                  </h3>
+                  <div id="checkboxes1" data-role="fieldcontain" data-controltype="checkboxes">
+                      <fieldset data-role="controlgroup" data-type="vertical">
+                          <input id="checkbox1" name="" type="checkbox"/>
+                          <label for="checkbox1">
+                              Cola
+                          </label>
+                          <input id="checkbox2" name="" type="checkbox"/>
+                          <label for="checkbox2">
+                              Orange
+                          </label>
+                          <input id="checkbox3" name="Red" type="checkbox"/>
+                          <label for="checkbox3">
+                              Red
+                          </label>
+                          <input id="checkbox4" name="Blue" type="checkbox"/>
+                          <label for="checkbox4">
+                              Blue
+                          </label>
+                          <input id="checkbox5" name="Green" type="checkbox"/>
+                          <label for="checkbox5">
+                              Green
+                          </label>
+                      </fieldset>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      Hot Drinks
+                  </h3>
+                  <div id="checkboxes2" data-role="fieldcontain" data-controltype="checkboxes">
+                      <fieldset data-role="controlgroup" data-type="vertical">
+                          <input id="checkbox21" name="" type="checkbox"/>
+                          <label for="checkbox21">
+                              Coffee
+                          </label>
+                          <input id="checkbox22" name="Tea" type="checkbox"/>
+                          <label for="checkbox22">
+                              Tea
+                          </label>
+                      </fieldset>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      Alcohol
+                  </h3>
+                  <div id="checkboxes3" data-role="fieldcontain" data-controltype="checkboxes">
+                      <fieldset data-role="controlgroup" data-type="vertical">
+                          <input id="checkbox23" name="" type="checkbox"/>
+                          <label for="checkbox23">
+                              Beer
+                          </label>
+                          <input id="checkbox24" name="" type="checkbox"/>
+                          <label for="checkbox24">
+                              Wine
+                          </label>
+                          <input id="checkbox25" name="" type="checkbox"/>
+                          <label for="checkbox25">
+                              Vodka
+                          </label>
+                          <input id="checkbox26" name="" type="checkbox"/>
+                          <label for="checkbox26">
+                              Cider
+                          </label>
+                          <input id="checkbox27" name="" type="checkbox"/>
+                          <label for="checkbox27">
+                              Lager
+                          </label>
+                      </fieldset>
+                  </div>
+              </div>
+          </div>
+          <div style=" text-align:center" data-controltype="image">
+              <img style="width: 200px; height: px" src="img/resturante.png"/>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.ui-page { 
+    background:#White;
+    }
+    
+    p  {
+        color: #2b2e31;
+        
+    }
+    
+    .txtinput { 
+        color: #2b2e31;
+    }
+    
+    .h1 {
+        color: #2b2e31; 
+        text-align: center;
+    }
+    
+    .h2 {
+        color: #2b2e31; 
+        text-align: center;
+    }
+    
+    ul
+    {
+        color: #2b2e31
+    }
+    
+    ol
+    {
+        color: #2b2e31
+    }
+    
+    p {
+        font-family: "Times New Roman", Georgia, Serif;
+    }

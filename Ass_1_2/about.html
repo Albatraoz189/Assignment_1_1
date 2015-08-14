@@ -65,38 +65,6 @@
           <h1 class="h1">
               Location
           </h1>
-          <div id="googlemapsjs1" class="google-map" style="width: 288px; height: 200px; margin-left: auto; margin-right: auto">
-          </div>
-          <script type="text/javascript">
-                  window.CodiqaControls && window.CodiqaControls.register('googlemaps', 'googlemapsjs1', {
-              ready: function(control) {
-  
-                  control.options = {
-                      zoom: 14,
-                      mapTypeId: google.maps.MapTypeId.ROADMAP
-                  };
-  
-                  control.el = document.getElementById(control._id);
-                  control.map = new google.maps.Map(control.el, control.options);
-  
-                  var geocoder = new google.maps.Geocoder();
-                  geocoder.geocode({
-                      'address': 'Ringwood Victoria'
-                  }, function(results, status) {
-                      if (status == google.maps.GeocoderStatus.OK) {
-  
-                          var marker = new google.maps.Marker({
-                              map: control.map,
-                              position: results[0].geometry.location
-                          });
-                          control.center = results[0].geometry.location;
-                          control.map.setCenter(control.center);
-                      }
-                  });
-  
-              }
-          });
-          </script>
       </div>
   </div>
 </body>

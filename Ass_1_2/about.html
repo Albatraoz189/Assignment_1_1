@@ -1,3 +1,9 @@
+<!-- Name: Sebastian Shelley -->
+<!-- Student ID: 212035185 --> 
+
+
+<!-- About Page --> 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +27,7 @@
 <body>
   <div data-role="page" data-control-title="About " id="About">
       <div data-theme="b" data-role="header">
-          <a data-role="button" href="index.html" data-icon="home" data-iconpos="notext" class="ui-btn-left">
+          <a data-role="button" href="index.html" data-icon="home" data-iconpos="notext"            class="ui-btn-left">
           </a>
           <h3>
               About
@@ -33,7 +39,7 @@
           </div>
           <div data-controltype="textblock">
               <p style="text-align: center;" data-mce-style="text-align: center;">
-                  <span style="font-family: 'times new roman', times;" data-mce-style="font-family: 'times new roman', times;">
+                  <span style="font-family: 'times new roman', times;" data-mce-                            style="font-family: 'times new roman', times;">
                       <b>
                           We are a new restauant that serves all kinds of different food located
                           in Melbourne Victoria Australia. Our menu changes regularly and we post
@@ -42,14 +48,14 @@
                   </span>
               </p>
               <p style="text-align: center;" data-mce-style="text-align: center;">
-                  <span style="font-family: 'times new roman', times;" data-mce-style="font-family: 'times new roman', times;">
+                  <span style="font-family: 'times new roman', times;" data-mce-                            style="font-family: 'times new roman', times;">
                       <b>
                           We also have an online take away service you can use. 
                       </b>
                   </span>
               </p>
               <p style="text-align: center;" data-mce-style="text-align: center;">
-                  <span style="font-family: 'times new roman', times;" data-mce-style="font-family: 'times new roman', times;">
+                  <span style="font-family: 'times new roman', times;" data-mce-                            style="font-family: 'times new roman', times;">
                       <b>
                           <br/>
                       </b>
@@ -57,6 +63,7 @@
               </p>
           </div>
           <div data-controltype="htmlblock">
+              <!-- Working Call Function -->
               <a href="tel:0417576310" data-role="button" rel="external">
                   Call us on: 0417576310
               </a>
@@ -65,6 +72,42 @@
           <h1 class="h1">
               Location
           </h1>
+          
+           <!-- Implementation of Google Maps with Resturant location -->
+          
+          
+          <div id="googlemapsjs1" class="google-map" style="width: 288px; height: 200px;            margin-left: auto; margin-right: auto">
+          </div>
+          <script type="text/javascript">
+                  window.CodiqaControls && window.CodiqaControls.register('googlemaps',                 'googlemapsjs1', {
+              ready: function(control) {
+  
+                  control.options = {
+                      zoom: 14,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP
+                  };
+  
+                  control.el = document.getElementById(control._id);
+                  control.map = new google.maps.Map(control.el, control.options);
+  
+                  var geocoder = new google.maps.Geocoder();
+                  geocoder.geocode({
+                      'address': 'Ringwood Victoria'
+                  }, function(results, status) {
+                      if (status == google.maps.GeocoderStatus.OK) {
+  
+                          var marker = new google.maps.Marker({
+                              map: control.map,
+                              position: results[0].geometry.location
+                          });
+                          control.center = results[0].geometry.location;
+                          control.map.setCenter(control.center);
+                      }
+                  });
+  
+              }
+          });
+          </script>
       </div>
   </div>
 </body>
